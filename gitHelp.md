@@ -6,7 +6,7 @@
 5.  提交修改。
 6.  在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
 下图展示了 Git 的工作流程：  
-![Git工作流程](images/git-process.png "Git工作流程")
+![Git工作流程](https://github.com/ironfist110/myProject/blob/master/images/git-process.png "Git工作流程")
 ## 理解Git 工作区、暂存区和版本库概念
 工作区：就是你在电脑里能看到的目录。br/>
 暂存区：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。  
