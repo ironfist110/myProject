@@ -5,9 +5,9 @@
 4.  在提交前查看修改。
 5.  提交修改。
 6.  在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
-下图展示了 Git 的工作流程：
+下图展示了 Git 的工作流程：  
 ## 理解Git 工作区、暂存区和版本库概念
-工作区：就是你在电脑里能看到的目录。<br>
+工作区：就是你在电脑里能看到的目录。br/>
 暂存区：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。  
 版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。  
 下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：  
@@ -41,26 +41,36 @@ $ git commit -m '初始化项目版本'
 ### git clone
 我们使用 git clone 从现有 Git 仓库中拷贝项目（类似 svn checkout）。
 克隆仓库的命令格式为：
+```
 git clone\ <repo\>
+```
 如果我们需要克隆到指定的目录，可以使用以下命令格式：
+```
 git clone <repo> <directory>
+```
 参数说明：
-repo:Git 仓库。
-directory:本地目录。
+repo:Git 仓库。  
+directory:本地目录。  
 比如，要克隆 Ruby 语言的 Git 代码仓库 Grit，可以用下面的命令：
 $ git clone git://github.com/schacon/grit.git
 执行该命令后，会在当前目录下创建一个名为grit的目录，其中包含一个 .git 的目录，用于保存下载下来的所有版本记录。
 如果要自己定义要新建的项目目录名称，可以在上面的命令末尾指定新的名字：
+```
 $ git clone git://github.com/schacon/grit.git mygrit
+```
 几种效果等价的git clone写法：
+```
 git clone http://github.com/CosmosHua/locate new
 git clone http://github.com/CosmosHua/locate.git new
 git clone git://github.com/CosmosHua/locate new
 git clone git://github.com/CosmosHua/locate.git new
-git clone 时，可以所用不同的协议，包括 ssh, git, https 等，其中最常用的是 ssh，因为速度较快，还可以配置公钥免输入密码。各种写法如下：
+```
+git clone 时，可以所用不同的协议，包括 ssh, git, https 等，其中最常用的是 ssh，因为速度较快，还可以配置公钥免输入密码。各种写法如下
+```
 git clone git@github.com:fsliurujie/test.git         --SSH协议
 git clone git://github.com/fsliurujie/test.git          --GIT协议
 git clone https://github.com/fsliurujie/test.git      --HTTPS协议
+```
 ## Git 基本操作
 Git 的工作就是创建和保存你项目的快照及与之后的快照进行对比。本章将对有关创建与提交你的项目快照的命令作介绍。
 
@@ -69,19 +79,20 @@ git init
 用 git init 在目录中创建新的 Git 仓库。 你可以在任何时候、任何目录中这么做，完全是本地化的。
 
 在目录中执行 git init，就可以创建一个 Git 仓库了。比如我们创建 runoob 项目：
-
+```
 $ mkdir runoob
 $ cd runoob/
 $ git init
 Initialized empty Git repository in /Users/tianqixin/www/runoob/.git/
 在 /www/runoob/.git/ 目录初始化空 Git 仓库完毕。
+```
 现在你可以看到在你的项目中生成了 .git 这个子目录。 这就是你的 Git 仓库了，所有有关你的此项目的快照数据都存放在这里。
-
+```
 ls -a
 .    ..    .git
 git clone
 使用 git clone 拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改。
-
+```
 如果你需要与他人合作一个项目，或者想要复制一个项目，看看代码，你就可以克隆那个项目。 执行命令：
 
  git clone [url]
