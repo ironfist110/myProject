@@ -1,12 +1,17 @@
-## 一般工作流程如下：
+# 一般工作流程如下：
 1.  克隆 Git 资源作为工作目录。
 2.  在克隆的资源上添加或修改文件。
 3.  如果其他人修改了，你可以更新资源。
 4.  在提交前查看修改。
 5.  提交修改。
 6.  在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
+<<<<<<< HEAD
+下图展示了 Git 的工作流程：
+![流程图](https://github.com/ironfist110/myProject/blob/master/images/git-process.png "流程图")
+=======
 下图展示了 Git 的工作流程：  
 ![Git工作流程](https://github.com/ironfist110/myProject/blob/master/images/git-process.png "Git工作流程")
+>>>>>>> 824ada1390326772f05877e73f1540b394d6739e
 ## 理解Git 工作区、暂存区和版本库概念
 工作区：就是你在电脑里能看到的目录。<br/>
 暂存区：英文叫stage, 或index。一般存放在 ".git目录下" 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。  
@@ -221,7 +226,7 @@ index e69de29..69b5711 100644
 git status 显示你上次提交更新后的更改或者写入缓存的改动， 而 git diff 一行一行地显示这些改动具体是啥。
 
 接下来我们来查看下 git diff --cached 的执行效果：
-
+```
 $ git add hello.php 
 $ git status -s
 A  README
@@ -244,6 +249,7 @@ index 0000000..69b5711
 +echo '菜鸟教程：www.runoob.com';
 +?>
 git commit
+```
 使用 git add 命令将想要快照的内容写入缓存区， 而执行 git commit 将缓存区内容添加到仓库中。
 
 Git 为你的每一个提交都记录你的名字与电子邮箱地址，所以第一步需要配置用户名和邮箱地址。
@@ -379,3 +385,4 @@ $ git add README
 $ git mv README  README.md
 $ ls
 README.md
+### To be count
