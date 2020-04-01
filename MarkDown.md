@@ -53,4 +53,4 @@ MarkDown
 [^1]:Markdown 是一种纯文本标记语言
 [^2]:HyperText Markup Language 超文本标记语言
 
-2020年04月 1日 19:14:53
+二〇二〇年四月一日
