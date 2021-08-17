@@ -15,7 +15,7 @@ output: word_document
 ### 二、链接
 1. 行内式    [链接地址为](http://www.baidu.com "百度")
 2. 参考式    [常用网址][1]
-3. 自动链接如：<http://www.baidu.com>,<xx@163.com>
+3. 自动链接如：<http://www.baidu.com>,<xywang7@163.com>
 [1]:http://www.google.com
 ### 三、列表
 1. 无序列表
