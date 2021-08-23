@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 test v2
-=======
 test v1
->>>>>>> b96417730ceaf9ef2dd11b0e8163e1f4fc241fe2
