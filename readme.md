@@ -1,7 +1,7 @@
-vimrc 配置文件
-vim所用插件
-google chrome同步助手插件
-ohmyzsh
-albert zst文件
-rime五笔字库
-vim Plug管理
+vimrc 配置文件<br>
+vim所用插件<br>
+google chrome同步助手插件<br>
+ohmyzsh<br>
+albert zst文件<br>
+rime五笔字库<br>
+vim Plug管理<br>
